@@ -1,0 +1,33 @@
+class Person {
+    void displayInfo() {
+        System.out.println("This is a person");
+    }
+}
+class Doctor extends Person {
+    void work() {
+        System.out.println("Doctor treats patients");
+    }
+}
+class Teacher extends Person {
+    void work() {
+        System.out.println("Teacher teaches students");
+    }
+}
+class Engnieer extends Person {
+    void work() {
+        System.out.println("Engnieer builds systems");
+    }
+}
+class Main1 {
+    public static void main(String[] args) {
+        Doctor d = new Doctor();
+        Teacher t = new Teacher();
+        Engnieer e = new Engnieer();
+        d.displayInfo();
+        d.work();
+        t.displayInfo();
+        t.work();
+        e.displayInfo();
+        e.work();
+    }
+}
