@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class PrimeNumbersArray {
+    public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+     System.out.println("Enter starting number: ");
+     int start = input.nextInt();
+     System.out.println("Enter ending number: ");
+     int end = input.nextInt();
+     int[] primeNumbers = new int[end - start + 1];
+     int index = 0;
+     for (int i = start ; i <= end ; i++) {
+        if (isPrime(i)) {
+            primeNumbers[index] = i ;
+            index++;
+        }
+     }
+     System.out.println("Prime number are: ");
+     if ( index == 0) {
+        System.out.println("No prime number found.");
+     } else {
+        for (int i = 0; i < index; i++) {
+            System.out.println(primeNumbers[i] + " ");
+        }
+     }
+     input.close();
+     }
+     public static boolean isPrime(int num) {
+        if (num <= 1) return false;
+        for (int i = 2; i <= num / 2; i++) {
+            if(num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    }
