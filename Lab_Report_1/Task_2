@@ -1,0 +1,17 @@
+public class StudentInfo {
+    public static void main(String[] args) {
+        String name = "Md. Rohan";
+        String studentId ="E2530XX";
+        int age = 20;
+        String email ="rohan@gmail.com";
+        String Phone ="0178XXXXXXX";
+        String address ="Ctg, Bangladesh";
+        System.out.println("~~Student Information~~");
+        System.out.println("Name: "+ name);
+        System.out.println("StudentId"+ studentId);
+        System.out.println("Age"+ age);
+        System.out.println("Email"+ email);
+        System.out.println("Phone"+ Phone);
+        System.out.println("Address"+ address);
+    }
+}
